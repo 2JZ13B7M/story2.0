@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="story2._0.NewPage2"
+             Title="NewPage2">
+    <Grid RowSpacing="-250" >
+
+        <Grid.RowDefinitions>
+           
+            <RowDefinition  />
+            
+            <RowDefinition  />
+           
+        </Grid.RowDefinitions>
+
+
+        <StackLayout  Orientation="Horizontal" HorizontalOptions="Center" Padding="10"  Grid.Row="0">
+            <toolkit:MediaElement x:Name="A" WidthRequest="0" HeightRequest="0" Source="embed://carrera.mp3" />
+            <Button Grid.Column="0" HorizontalOptions="Start" Margin="0, 0, 60,0" VerticalOptions="Start"  x:Name="B" Text="Play" WidthRequest="150" Clicked="B_Clicked" />
+            <toolkit:MediaElement x:Name="C" WidthRequest="0" HeightRequest="0" Source="embed://carrerasound.mp3" />
+            <Button Grid.Column="1" HorizontalOptions="End" VerticalOptions="Start"  x:Name="D" Text="Listen" WidthRequest="150"  Clicked="D_Clicked" />
+        </StackLayout>
+        
+        <StackLayout HeightRequest="950"  Grid.Row="1">
+            <Border StrokeThickness="5" Stroke="Transparent" StrokeShape="RoundRectangle 20 20 "   >
+                <Image   Source="carrera.png"/>
+            </Border>
+        </StackLayout>
+        <ScrollView MaximumHeightRequest="500" Grid.Row="1">
+
+            <Label x:Name="scrollingText" FontFamily="Lobster" Padding="20,0,0,0" FontSize="25" Text="Introducing the Porsche Carrera GT, a masterpiece born from the intersection of artistry and engineering, a true embodiment of automotive excellence that continues to captivate enthusiasts and collectors alike with its timeless allure and unparalleled performance.&#10;&#10;
+
+Crafted with meticulous attention to detail, the Carrera GT stands as a testament to Porsche's unwavering commitment to pushing the boundaries of automotive innovation. From its sculpted exterior lines to its meticulously crafted interior, every aspect of the Carrera GT exudes sophistication and precision.&#10;&#10;
+
+At the heart of this automotive icon lies a naturally aspirated 5.7-liter V10 engine, handcrafted to perfection and capable of unleashing an exhilarating symphony of power. With 605 horsepower on tap and a spine-tingling redline that reaches 8,400 RPM, the Carrera GT accelerates from 0 to 60 mph in a blistering 3.5 seconds, delivering a driving experience that is nothing short of breathtaking.&#10;&#10;
+
+But the Carrera GT is more than just a straight-line speed demon. Its lightweight carbon fiber monocoque chassis and race-inspired suspension ensure razor-sharp handling and unmatched agility, allowing drivers to carve through corners with confidence and precision. Every input from the driver is met with a response that is immediate and intuitive, making every drive an unforgettable experience.&#10;&#10;
+
+Step inside the Carrera GT, and you're greeted by a cockpit designed with the serious driver in mind. Luxurious materials and meticulous craftsmanship create an environment that is both elegant and purposeful, while intuitive controls and advanced technology put the driver firmly in command.&#10;&#10;
+
+But perhaps what truly sets the Carrera GT apart is its timeless design. With its flowing lines, iconic silhouette, and attention to detail, the Carrera GT is a work of art that commands attention wherever it goes. From the distinctive air intakes to the sleek rear diffuser, every element of its design serves a purpose, blending form and function in perfect harmony.&#10;&#10;
+
+In the world of supercars, few vehicles can claim the status of legend. The Porsche Carrera GT is one such vehicle, a timeless icon that continues to inspire and excite enthusiasts around the world. With its unparalleled performance, breathtaking design, and uncompromising attention to detail, the Carrera GT remains a symbol of automotive greatness, reminding us of the endless possibilities that await those who dare to dream." HorizontalOptions="Center" VerticalOptions="Center" />
+            <!-- Ajoutez d'autres éléments ici si nécessaire -->
+        </ScrollView>
+    </Grid>
+</ContentPage>

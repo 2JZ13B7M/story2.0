@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="story2._0.NewPage1"
+             Title="Car Screen">
+    <VerticalStackLayout Spacing="40" Margin="0, 20, 0, 0">
+        <Frame WidthRequest="200" CornerRadius="30" HeightRequest="200"  >
+            <ImageButton Source="ambatajpg" Clicked="Button_Clicked"  Margin="30" HeightRequest="250" WidthRequest="250"  Aspect="Fill" ></ImageButton>
+        </Frame>
+        <Frame WidthRequest="200" CornerRadius="30" HeightRequest="200" >
+            <ImageButton Source="cock" Clicked="Button_Clicked_1" Margin="30" HeightRequest="250" WidthRequest="250" ></ImageButton>
+        </Frame>
+        <Frame WidthRequest="200" CornerRadius="30" HeightRequest="200">
+            <ImageButton Source="likeus" Margin="30" Clicked="Button_Clicked_2" HeightRequest="350" WidthRequest="300" ></ImageButton>
+        </Frame>
+            <Button Text="Back" WidthRequest="500" BackgroundColor="Red" HeightRequest="50" Margin="0 ,-15,0,0" HorizontalOptions="Center" TextColor="Black"  Clicked="Button_Clicked_3"/>
+        
+        
+    </VerticalStackLayout>
+</ContentPage>

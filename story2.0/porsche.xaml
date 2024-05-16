@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="story2._0.porsche"
+              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="porsche">
+    <Grid RowSpacing="-250" >
+        <Grid.RowDefinitions>
+            <!-- Définition des colonnes -->
+            <RowDefinition  />
+            <!-- Première colonne, largeur automatique -->
+            <RowDefinition  />
+            <!-- Deuxième colonne, largeur automatique -->
+        </Grid.RowDefinitions>
+
+        <!-- Contenu de la première colonne -->
+        <StackLayout Grid.Row="0">
+
+            <toolkit:MediaElement x:Name="A" WidthRequest="0" HeightRequest="0" Source="embed://carrera.mp3" />
+            <Button x:Name="B" Text="Play" WidthRequest="150" HeightRequest="20" Padding="0" Clicked="B_Clicked" />
+            <Border StrokeThickness="5" Stroke="Transparent" StrokeShape="RoundRectangle 20 20 "   >
+                <Image   Source="porsche.jpg"/>
+            </Border>
+            <!-- Ajoutez d'autres éléments ici si nécessaire -->
+        </StackLayout>
+
+        <!-- Contenu de la deuxième colonne -->
+        <ScrollView Grid.Row="1">
+
+            <Label x:Name="scrollingText" FontFamily="Lobster" Padding="15,0,0,0" FontSize="25" Text="Introducing the 2022 Porsche 911 GT3 RS, an automotive masterpiece meticulously crafted to ignite your passion for driving like never before. Born from decades of motorsport heritage and engineering excellence, the GT3 RS represents the pinnacle of Porsche's relentless pursuit of performance perfection.&#13;&#10;
+
+At the heart of this track-focused marvel lies a naturally aspirated 4.0-liter flat-six engine, meticulously engineered to deliver an intoxicating symphony of power and precision. With 520 horsepower unleashed at the rear wheels and a spine-tingling redline that stretches beyond 9,000 RPM, the GT3 RS catapults you from 0 to 60 mph in a blistering 3.0 seconds. Every throttle input becomes a crescendo of adrenaline as you harness the raw potency of Porsche's legendary powerplant.&#13;&#10;
+
+But the GT3 RS is more than just a straight-line speed demon. Its race-bred DNA is evident in every curve and contour, optimized for aerodynamic efficiency and unrivaled cornering prowess. From the front splitter to the massive rear wing, every element of its exterior design serves a purpose, channeling airflow to keep the GT3 RS planted firmly to the tarmac, even at extreme velocities.&#13;&#10;
+
+Step inside, and you're enveloped in a cockpit designed for the serious driver. Alcantara-clad sport seats cradle you in comfort, while a multifunction steering wheel provides tactile feedback and precision control. Carbon fiber accents and race-inspired instrumentation remind you that this is no ordinary sports car – it's a precision instrument engineered for one purpose: to dominate the track.&#13;&#10;
+
+And dominate it does. Whether carving through sweeping esses or attacking tight hairpins, the GT3 RS dances with agility and finesse, its chassis tuned to perfection to deliver telepathic handling and unyielding grip. With its rear-wheel steering system and adaptive suspension, the GT3 RS effortlessly transitions from apex to apex, instilling confidence and pushing the boundaries of what's possible on four wheels.&#13;&#10;
+
+But the GT3 RS isn't just a track day weapon – it's a statement of intent, a declaration of passion for the art of driving. It's the embodiment of Porsche's unwavering commitment to pushing the envelope of automotive engineering and delivering an experience that transcends mere transportation.&#13;&#10;
+
+In the 2022 Porsche 911 GT3 RS, every journey becomes an exhilarating adventure, every corner a chance to push the limits of performance, and every drive a symphony of speed and precision. So, strap in, ignite the flat-six behind you, and prepare to experience the thrill of pure driving perfection." HorizontalOptions="Center" VerticalOptions="Center" />
+            <!-- Ajoutez d'autres éléments ici si nécessaire -->
+        </ScrollView>
+    </Grid>
+</ContentPage>

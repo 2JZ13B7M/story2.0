@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="story2._0.audi"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="audi">
+    <Grid RowSpacing="-250" >
+        <Grid.RowDefinitions>
+
+            <RowDefinition  />
+
+            <RowDefinition   />
+
+            <RowDefinition   />
+
+        </Grid.RowDefinitions>
+        <StackLayout  Orientation="Horizontal" HorizontalOptions="Center" Padding="10"  Grid.Row="0">
+            <toolkit:MediaElement x:Name="A" WidthRequest="0" HeightRequest="0" Source="embed://Audi.mp3" />
+            <Button Grid.Column="0" HorizontalOptions="Start" Margin="0, 0, 60,0" VerticalOptions="Start"  x:Name="B" Text="Play" WidthRequest="150"  Clicked="Button_Clicked" />
+            <toolkit:MediaElement x:Name="C" WidthRequest="0" HeightRequest="0" Source="embed://R8sound.mp3" />
+            <Button Grid.Column="1" HorizontalOptions="End" VerticalOptions="Start"  x:Name="D" Text="Listen" WidthRequest="150"  Clicked="c_Clicked" />
+        </StackLayout>
+
+        <StackLayout  HeightRequest="670" Grid.Row="1">
+            <Border StrokeThickness="5" Stroke="Transparent" StrokeShape="RoundRectangle 20 20 ">
+                <Image Source="zelus.png"/>
+            </Border>
+        </StackLayout>
+          
+       
+        <ScrollView HeightRequest="570" Grid.Row="2">
+
+            <Label x:Name="scrollingText" FontFamily="Lobster" Padding="15,0,0,0" FontSize="25" Text="Introducing the Audi R8 GT, a supercar born from the marriage of Audi's relentless pursuit of performance excellence and its rich motorsport heritage. This limited-production marvel represents the pinnacle of Audi's engineering prowess, pushing the boundaries of what's possible on both road and track.&#13;&#10;
+
+Under the hood lies a ferocious naturally aspirated V10 engine, meticulously handcrafted to deliver an exhilarating symphony of power and precision. With over 600 horsepower at your command and a spine-tingling redline that stretches beyond 8,000 RPM, the R8 GT catapults you from 0 to 60 mph in a blistering rush of acceleration, delivering an adrenaline-fueled driving experience like no other.&#13;&#10;
+
+But the R8 GT is more than just a straight-line speed demon. Its lightweight construction, advanced aerodynamics, and race-inspired suspension combine to offer unrivaled agility and razor-sharp handling. Every curve becomes an invitation to push the limits of performance, with the R8 GT responding with precision and confidence, carving through corners with surgical precision and delivering an electrifying driving experience that leaves you breathless.&#13;&#10;
+
+Step inside, and you're greeted by a cockpit designed with the serious driver in mind. Premium materials and meticulous craftsmanship create an environment that is both luxurious and purposeful, while intuitive controls and advanced technology put you firmly in command. From the race-inspired bucket seats to the driver-centric instrument panel, every detail has been carefully considered to enhance the driving experience and create a true sense of connection between man and machine.&#13;&#10;
+
+But perhaps what truly sets the R8 GT apart is its unmistakable presence. With its striking design, aggressive stance, and distinctive Audi DNA, the R8 GT commands attention wherever it goes. From the iconic Singleframe grille to the sleek lines that flow seamlessly from front to rear, every element of its design serves a purpose, blending form and function in perfect harmony.&#13;&#10;
+
+In the world of supercars, the Audi R8 GT stands as a symbol of automotive excellence, a testament to the power of innovation and the pursuit of perfection. With its unparalleled performance, breathtaking design, and uncompromising attention to detail, the R8 GT redefines the boundaries of what's possible, offering a driving experience that is as thrilling as it is unforgettable. Welcome to the future of performance." HorizontalOptions="Center" VerticalOptions="Center" />
+            <!-- Ajoutez d'autres éléments ici si nécessaire -->
+        </ScrollView>
+    </Grid>
+</ContentPage>
